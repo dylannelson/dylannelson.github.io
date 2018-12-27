@@ -1,7 +1,26 @@
 #header {
   background-color: #8be5f9;
   color: #e0f7fc;
+  text-align: center;
 }
-#container {
+#everything {
   background-color: #e0f7fc;
+  margin-left: auto;
+  margin-right: auto;
+  /* mess around with width: ___
+	This width will be the total width and every other width must
+	add up to this width
+  */
 }
+#body {
+	padding: 10px;
+}
+#nav{
+	float: left;
+}
+#content{
+	float: right;
+}
+#footer{
+	clear: both;
+	
