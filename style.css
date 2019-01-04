@@ -1,5 +1,11 @@
+body{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+ul{
+	list-style-type: none;
+}
 #header {
-  background-color: #43D4FF;
+  background-color: #8be5f9;
   color: #e0f7fc;
   text-align: center;
 }
@@ -26,4 +32,5 @@
 	clear: both;
 	text-align: right;
 	background-color: #EFEEE3;
+	font-size: 80%;
 }	
