@@ -3,6 +3,13 @@ body{
 }
 ul{
 	list-style-type: none;
+	text-align: center;
+	
+}
+#nav li{
+	padding: 10px;
+	padding-right: 50px;
+	
 }
 #header {
   background-color: #8be5f9;
@@ -34,3 +41,13 @@ ul{
 	background-color: #EFEEE3;
 	font-size: 80%;
 }	
+a:link, a:active, a:visited {
+  text-decoration: none;
+  color: white;
+  padding: 6px 15px;
+  background-color: #52514C;
+}
+a:hover {
+  background-color: #878681;
+}
+
