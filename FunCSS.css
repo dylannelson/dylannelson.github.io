@@ -1,0 +1,28 @@
+body{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+nav{
+	background-color:#d351ff;
+	
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 150px;
+	background-color: #fff18c;
+}
+li{
+	float: inline;
+
+}
+li a {
+	color: gray;
+	padding: 8px 16px;
+	text-decoration: none;
+	text-align:center;
+}
+li a:hover {
+	background-color: #555;
+	color: white;
+}
