@@ -3,26 +3,52 @@ body{
 }
 nav{
 	background-color:#d351ff;
-	
 }
 ul {
 	list-style-type: none;
+	background-color: #ffed66;
+	overflow: hidden;
 	margin: 0;
 	padding: 0;
-	width: 150px;
-	background-color: #fff18c;
 }
 li{
-	float: inline;
-
+	float:left;
+	width: 25%;
+	
 }
-li a {
+.FunClass{
+	background-color: pink;
+	
+}
+
+li a{
+	display: block;
 	color: gray;
-	padding: 8px 16px;
 	text-decoration: none;
 	text-align:center;
+	padding: 15px 0px;
 }
 li a:hover {
 	background-color: #555;
 	color: white;
+}
+
+main{
+	background-color: #e96dff;
+	text-align: center;
+	
+}
+p{
+	text-indent: 30px;
+}
+article{
+	text-align: left;
+	margin-top: 2%;
+	display: inline-block;
+	background-color: #fff6b3;
+	width: 70%;
+	float: center;
+	overflow: hidden;
+	padding: 0px 20px;
+	border-radius: 20px;
 }
