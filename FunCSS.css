@@ -4,20 +4,20 @@ body{
 nav{
 	background-color:#d351ff;
 }
-ul {
+nav ul {
 	list-style-type: none;
 	background-color: #ffed66;
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
 }
-li{
+nav ul li{
 	float:left;
 	width: 25%;
 	
 }
 .FunClass{
-	background-color: pink;
+	background-color: #e5d864;
 	
 }
 
@@ -34,14 +34,14 @@ li a:hover {
 }
 
 main{
-	background-color: #e96dff;
+	background-color: #b46dce;
 	text-align: center;
 	
 }
 p{
 	text-indent: 30px;
 }
-article{
+main article{
 	text-align: left;
 	margin-top: 2%;
 	display: inline-block;
@@ -51,4 +51,11 @@ article{
 	overflow: hidden;
 	padding: 0px 20px;
 	border-radius: 20px;
+}
+#sidebar ul{
+	
+}
+#sidebar li a{
+	float: left;
+	display:inline-block;	
 }
