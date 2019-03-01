@@ -3,6 +3,7 @@ body{
 }
 nav{
 	background-color:#d351ff;
+
 }
 nav ul {
 	list-style-type: none;
@@ -20,7 +21,6 @@ nav ul li{
 	background-color: #e5d864;
 	
 }
-
 li a{
 	display: block;
 	color: gray;
@@ -52,10 +52,16 @@ main article{
 	padding: 0px 20px;
 	border-radius: 20px;
 }
-#sidebar ul{
-	
-}
-#sidebar li a{
+.sidebar{
 	float: left;
-	display:inline-block;	
+	text-decoration: none;
+}
+.sidebar li{
+	text-decoration: none;
+}
+.sidebar li a{
+	left: 0;
+	float: left;
+	display:inline-block;
+	text-decoration: none;
 }
