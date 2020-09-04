@@ -1,13 +1,9 @@
 body{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
-nav{
-	background-color:#d351ff;
-
-}
 nav ul {
 	list-style-type: none;
-	background-color: #ffed66;
+	background-color: #316E88;
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
@@ -18,7 +14,7 @@ nav ul li{
 	
 }
 .FunClass{
-	background-color: #e5d864;
+	background-color: #22ACB1;
 	
 }
 li a{
@@ -29,12 +25,12 @@ li a{
 	padding: 15px 0px;
 }
 li a:hover {
-	background-color: #555;
+	background-color: #3BCFC9;
 	color: white;
 }
 
 main{
-	background-color: #b46dce;
+	background-color: #22ACB1;
 	text-align: center;
 	
 }
@@ -45,7 +41,7 @@ main article{
 	text-align: left;
 	margin-top: 2%;
 	display: inline-block;
-	background-color: #fff6b3;
+	background-color:#3BCFC9;
 	width: 70%;
 	float: center;
 	overflow: hidden;

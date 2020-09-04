@@ -9,7 +9,7 @@ li{
 	padding: 3px;
 }
 #header {
-  background-color: #8be5f9;
+  background-color: #3484F0;
   color: #e0f7fc;
   text-align: center;
 }
@@ -20,18 +20,15 @@ li{
   width: 800px;
 }
 #body {
-	
 	padding: 10px;
 }
 #nav {
 	float: left;
 	width: 160px;
-	/*background-color: #FAF17A;*/
-	
 }
 #content{
 	float: right;
-	background-color: #aecff9;
+	background-color: #C4DBFA;
 	width: 600px;
 	padding: 0px 10px ;
 	border-radius: 12px;
@@ -40,11 +37,11 @@ li{
 #footer{
 	clear: both;
 	text-align: right;
-	background-color: #EFEEE3;
+	background-color: #F7F7F7;
 	font-size: 80%;
 }	
 .btn{
-  background-color: gray;
+  background-color: #3484F0;
   border: none;
   color: white;
   padding: 4px 12px;
@@ -53,7 +50,7 @@ li{
   width: 80px;
 }
 .btn:hover {
-  background-color: #b7b2b2;
+  background-color: #C4DBFA;
   color: white;
 }
 .Index{
