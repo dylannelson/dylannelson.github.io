@@ -2,10 +2,10 @@ body{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 :root {
-	--back-color: #22ACB1;
-	--body-color: #3BCFC9;
-	--nav-color: #316E88;
-	--highlight-color: ;
+	--back-color: #AEA7A5;
+	--body-color: #E0E1DF;
+	--nav-color: #dbd4d3;
+	--highlight-color: #f0e7e6;
   }
 nav ul {
 	list-style-type: none;
@@ -19,20 +19,20 @@ nav ul li{
 	width: 25%;
 	
 }
-.FunClass{
+.BusButton{
 	background-color: var(--back-color);
 	
 }
 li a{
 	display: block;
-	color: #D3D3D3;
+	color: #474241;
 	text-decoration: none;
 	text-align:center;
 	padding: 15px 0px;
 }
 li a:hover {
-	background-color: var(--body-color);
-	color: white;
+	background-color: var(--highlight-color);
+	color: #9c8f8c;
 }
 
 main{
