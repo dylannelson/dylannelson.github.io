@@ -54,20 +54,17 @@ main article{
 	padding: 0px 20px;
 	border-radius: 20px;
 }
-.sidebar{
-	float: left;
-	text-decoration: none;
-}
-.sidebar li{
-	text-decoration: none;
-}
-.sidebar li a{
-	left: 0;
-	float: left;
-	display:inline-block;
-	text-decoration: none;
-}
-ul.a{
+
+ul.navbar{
 	list-style-type: none;
 	float: left;
+}
+ul.navbar li{
+	padding: 10px 10px;
+}
+a.top{
+	color : #A0522D;
+}
+a.top:visited{
+	color : #A0522D;
 }
