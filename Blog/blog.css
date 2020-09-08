@@ -67,3 +67,7 @@ main article{
 	display:inline-block;
 	text-decoration: none;
 }
+ul.a{
+	list-style-type: none;
+	float: left;
+}
