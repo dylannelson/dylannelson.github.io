@@ -59,3 +59,9 @@ li{
 .Index:hover{
 	background-color:#f7a0a0;
 }
+a.link{
+	color : #3484F0;
+}
+a.link:visited{
+	color : #3484F0;
+}
