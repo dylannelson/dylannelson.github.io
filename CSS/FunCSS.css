@@ -19,7 +19,7 @@ nav ul li{
 	width: 25%;
 	
 }
-.FunClass{
+.CurrentPage{
 	background-color: var(--back-color);
 	
 }
@@ -28,7 +28,8 @@ li a{
 	color: #D3D3D3;
 	text-decoration: none;
 	text-align:center;
-	padding: 15px 0px;
+	padding: 18px 0px; 
+	/* Should be 15 like the rest but wont stay the same for whatever reason */
 }
 li a:hover {
 	background-color: var(--body-color);
