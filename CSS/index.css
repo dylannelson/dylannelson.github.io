@@ -1,5 +1,6 @@
 body{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	
 }
 :root {
 	--back-color: #9db5b2;
@@ -38,6 +39,7 @@ li a:hover {
 main{
 	background-color: var(--back-color);
 	text-align: center;
+	padding-bottom:40px;
 	
 }
 /* p{
