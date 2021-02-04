@@ -1,10 +1,12 @@
 body{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin:0px;
+	overflow-y: scroll;
 }
 :root {
 	--back-color: #AEA7A5;
-	--body-color: #E0E1DF;
-	--nav-color: #dbd4d3;
+	--body-color: #d6d6d6;
+	--nav-color: #d0c7c6;
 	--highlight-color: #f0e7e6;
   }
 nav ul {
