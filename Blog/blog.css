@@ -4,10 +4,10 @@ body{
 	overflow-y: scroll;
 }
 :root {
-	--back-color: #AEA7A5;
-	--body-color: #d6d6d6;
-	--nav-color: #d0c7c6;
-	--highlight-color: #f0e7e6;
+	--back-color: #a8bed5;
+	--body-color: #dae2e9;
+	--nav-color: #c3d0dd;
+	--highlight-color: #cfdbe6;
   }
 nav ul {
 	list-style-type: none;
@@ -27,14 +27,14 @@ nav ul li{
 }
 li a{
 	display: block;
-	color: #474241;
+	color: #020f2e;
 	text-decoration: none;
 	text-align:center;
 	padding: 15px 0px;
 }
 li a:hover {
 	background-color: var(--highlight-color);
-	color: #9c8f8c;
+	color: #274079;
 }
 
 main{
@@ -64,8 +64,8 @@ ul.navbar li{
 	padding: 10px 10px;
 }
 a.top{
-	color : #A0522D;
+	color : #274079;
 }
 a.top:visited{
-	color : #A0522D;
+	color : #274079;
 }
