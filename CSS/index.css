@@ -1,8 +1,8 @@
 :root {
-	--back-color: #a7cec9;
-	--body-color: #e8f6f4;
-	--nav-color: #daf0ee;
-	--highlight-color: #daf0ee;
+	--back-color: #d87660;
+	--body-color: #f6e8e8;
+	--nav-color: #e98872;
+	--highlight-color: #f5a694;
   }
 body{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -28,14 +28,14 @@ nav ul li{
 }
 li a{
 	display: block;
-	color: #474241;
+	color: #ffffff;
 	text-decoration: none;
 	text-align:center;
 	padding: 15px 0px;
 }
 li a:hover {
-	background-color: #c6e1df;
-	color: black;
+	background-color: var(--highlight-color);
+	color: white;
 }
 
 main{
