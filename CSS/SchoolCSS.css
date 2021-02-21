@@ -4,8 +4,8 @@ body{
 	overflow-y: scroll;
 }
 :root {
-	--back-color: #151e3f;
-	--body-color: #f2f3d9;
+	--back-color: #18234d;
+	--body-color: #feffd5;
 	--nav-color: #030027;
 	--highlight-color: ;
   }
@@ -51,7 +51,7 @@ main article{
 	display: inline-block;
 	background-color:var(--body-color);
 	width: 70%;
-	float: center;
+	/* float: center; */
 	overflow: hidden;
 	padding: 0px 20px;
 	border-radius: 20px;
@@ -65,7 +65,7 @@ main article{
 }
 .sidebar li a{
 	left: 0;
-	float: left;
+	/* float: left; */
 	display:inline-block;
 	text-decoration: none;
 }
