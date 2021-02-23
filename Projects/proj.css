@@ -1,10 +1,9 @@
-
 :root {
-	--back-color: #484A96;
-	--body-color: #f0e8f6;
-	--nav-color: #6568b8;
-	--highlight-color: #6263aa;
-}
+	--back-color: #e98872;
+	--body-color: #f6e8e8;
+	--nav-color: #f5a694;
+	--highlight-color: #f5a694;
+  }
 body{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	margin:0px;
@@ -53,7 +52,7 @@ main article{
 	margin-top: 2%;
 	display: inline-block;
 	background-color:var(--body-color);
-	width: 50%;
+	width: 80%;
 	overflow: hidden;
 	padding: 0px 20px;
 	border-radius: 20px;
@@ -68,10 +67,10 @@ ul.navbar li{
 	padding: 0px;
 }
 a.top{
-	color : var(--back-color);
+	color : #A0522D;
 }
 a.top:visited{
-	color : var(--back-color);
+	color : #A0522D;
 }
 /* May be bad */
 #footer{
