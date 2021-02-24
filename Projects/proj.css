@@ -1,9 +1,10 @@
+
 :root {
-	--back-color: #e98872;
-	--body-color: #f6e8e8;
-	--nav-color: #f5a694;
-	--highlight-color: #f5a694;
-  }
+	--back-color: #484A96;
+	--body-color: #f0e8f6;
+	--nav-color: #6568b8;
+	--highlight-color: #6263aa;
+}
 body{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	margin:0px;
@@ -52,7 +53,8 @@ main article{
 	margin-top: 2%;
 	display: inline-block;
 	background-color:var(--body-color);
-	width: 80%;
+	min-width: 320px;
+	width: 60%;
 	overflow: hidden;
 	padding: 0px 20px;
 	border-radius: 20px;
@@ -72,9 +74,8 @@ a.top{
 a.top:visited{
 	color : #A0522D;
 }
-/* May be bad */
-#footer{
-	clear: both;
-	text-align: right;
-	font-size: 90%;
-}	
+/* Container for videos */
+iframe, img{
+	width: 40%;
+	min-width: 300px;
+}
