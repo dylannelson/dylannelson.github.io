@@ -60,8 +60,8 @@ main article{
 	margin-top: 2%;
 	display: inline-block;
 	background-color:var(--body-color);
-	width: 70%;
-	/* float: center; */
+	min-width: 320px;
+	width: 60%;
 	overflow: hidden;
 	padding: 0px 20px;
 	border-radius: 20px;
@@ -76,4 +76,17 @@ a.progression{
 }
 a.progression:visited{
 	color : #277956;
+}
+/*  Robots CSS  */
+.robot{
+	width: 60%;
+	min-width: 320px;
+}
+.rock{
+	width: 60%;
+	min-width: 320px;
+}
+.half-image{
+	width: 30%;
+	min-width: 160px;
 }
