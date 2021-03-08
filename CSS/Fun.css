@@ -35,14 +35,14 @@ nav ul li{
 .NotCurrentTab{
 	background-color: var(--nav-color2);
 }
-li a{
+nav li a{
 	display: block;
 	color: #D3D3D3;
 	text-decoration: none;
 	text-align:center;
 	padding: 15px 0px; 
 }
-li a:hover {
+nav li a:hover {
 	background-color:  var(--highlight-color);
 	color: black;
 }
@@ -71,6 +71,9 @@ ul.navbar li{
 	width: 20%;
 }
 /* Links coloring */
+a.progression:hover{
+	background-color: #cad6cc ;
+}
 a.progression{
 	color : #277956;
 }
@@ -79,7 +82,7 @@ a.progression:visited{
 }
 /*  Robots CSS  */
 .robot{
-	width: 60%;
+	width: 70%;
 	min-width: 320px;
 }
 .rock{
@@ -87,6 +90,6 @@ a.progression:visited{
 	min-width: 320px;
 }
 .half-image{
-	width: 30%;
+	width: 35%;
 	min-width: 160px;
 }

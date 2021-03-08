@@ -50,7 +50,7 @@ main article{
 	margin-top: 2%;
 	display: inline-block;
 	background-color:var(--body-color);
-	width: 60%;
+	width: 50%;
 	min-width: 320px;
 	/* float: center; */
 	overflow: hidden;
