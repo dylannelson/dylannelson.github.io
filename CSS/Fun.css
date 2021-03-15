@@ -93,3 +93,26 @@ a.progression:visited{
 	width: 35%;
 	min-width: 160px;
 }
+
+/* FORMS */
+
+/* The HEADER of the form */
+summary{ 
+	background-color: #456a6b;
+	padding: 10px;
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+}
+summary:focus{
+    outline: none;
+}
+/* The CONTENT of the form */
+details{
+	background-color: var(--highlight-color);
+}
+details.notBottom{
+	border-bottom: 1px solid #284243;
+}
+div.formContent{
+	padding-left:10px;
+}
