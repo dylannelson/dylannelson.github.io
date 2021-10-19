@@ -79,3 +79,8 @@ a.top:visited{
 	text-align: right;
 	font-size: 90%;
 }	
+
+ul{
+	margin-top: 0;
+	margin-bottom: 8px;
+}
