@@ -12,30 +12,88 @@
 		<nav> 
 			<ul id = "top">
 				<!-- <li><img src="/Images/blu.png" alt="" width='10px'></li> -->
-				<li class = "label"><a href= "../index.html">Home</a></li>
-				<li class = "label"><a href= "../SchoolPage.html">School</a></li>
-				<li class = "label"><a href= "../Blog/blog.html">Bus Blog</a></li>
-				<li class = "label"><a href= "../Fun/FunPage.html">Fun</a></li>
+				<li class = "label"><a class = 'li_a' href= "../index.html">Home</a></li>
+				<li class = "label"><a class = 'li_a' href= "../SchoolPage.html">School</a></li>
+				<li class = "label"><a class = 'li_a' href= "../Blog/blog.html">Bus Blog</a></li>
+				<li class = "label"><a class = 'li_a' href= "../Fun/FunPage.html">Fun</a></li>
 			</ul>
 		</nav>
 		<main>
 			<article>
 
 				<h1>Pyrenote</h1>
-				<i>Summary of Project</i>
+				<i>Note: Some functionality like navbar and additional content and images are still being added</i><br><br>
+				<b>Abstract</b>
+				<p>
+					Pyrenote is a project in development by a growing group of student researchers here at UCSD. It's
+					primary purpose is to allow anyone to contribute to research by labeling data in an intuitive and
+					accessible way. Right now it is currently being used to develop a sort of voice recognition for
+					birds. The goal is to make an algorithm that can strongly label data (say where in the clip a bird
+					is calling and what bird is making the call). To do this, a very vast dataset is needed to be
+					labeled. I worked mostly on the user experience side. Allowing them to interact with their labeling
+					in new ways, such as keeping tabs on their progress and reaching goals. Developing a User Profile
+					page was the primary source for receiving this data and was developed iteratively as a whole new
+					page for the site
+				</p>
+
+
+				<!-- ----- QUARTER 1 ----- -->
 				<h3>Q1 Progress</h3>
-				<ul>
+				<ul> 
 					<li>Learning about the project
 						<ul><li>Purpose</li></ul>
 						<ul><li>History</li></ul>
 						<ul><li>Bird Domain Knowledge</li></ul>
 					</li>
-					<li>Using Pyrenote</li>
-					<li>Developing Ideas</li>
-					<li>Prototypes</li>
+					<li><a href="#using_pyre">Using Pyrenote</a></li>
+					<li><a href="#dev_ideas">Developing Ideas</a></li>
+					<li><a href="#proto_1">Prototypes</a></li>
 				</ul>
-				<img src="Images/p1.png" alt="*missing image of prototype 1"><br>
-				<i>Prototype 1</i> <br>
+
+				<h4 id="using_pyre">Using Pyrenote</h4>
+				<p>
+					As a user of Pyrenote I came up with a few ideas and improvements I wanted to implements. In the
+					end, my team and I decided to make a User Profile page. Engaging users is key to the Pyrenote
+					workflow, because without users, there is no content to be generated. We set out to incorporate a
+					user page with a few goals in mind: <br>
+					<ul>
+						<li>To allow users to track their progress on their own, in real time</li>
+						<li>To allow users to access previously annotated clips, in case there was an error, incomplete
+							labeling, or anything else.</li>
+						<li>To allow managers to organize and access all this data better as well, without manual 
+							intervention</li>
+					</ul>
+					Through this process we assessed each of these, and have plans and the potential to do much more.
+				</p>
+
+				<h4 id="dev_ideas">Developing Ideas</h4> 
+				<img class = 'imgAndCaption' src="Images/user.png" alt="*missing image of prototype 1">
+				<i class = 'imgAndCaption'>Different sets of functionality needed </i>
+				<p>
+					This was the first set of users we identified and decided we needed to work for. There is 
+					different data for each and different ways to access the data so it will allow the development
+					of each part to work fairly iteratively
+				</p>
+				
+				
+				<h4 id="proto_1">Prototyping</h4>
+				<img class = 'imgAndCaption' src="Images/p1.png" alt="*missing image of prototype 1">
+				<i class = 'imgAndCaption' >Prototype 1</i> <br>
+				<p>
+					The first prototype I made and presented to the team. Developed in <b>Figma</b> and shared in 
+					our weekly meetings. I eventually got a lot of feedback that paved my direction for the following
+					quarter. A lot more data was desired and organized in a different way
+				</p>
+				<b>Demo Vid: </b>
+				<div class='iframe-container'>
+					<iframe width="420" height="315"
+						src="https://www.youtube.com/embed/NNxcsMkdvb0?modestbranding=1&rel=0"
+						allowfullscreen="allowfullscreen"></iframe> <br>
+					<i>Live Demo</i> <br><br>
+				</div>
+				<hr>
+				
+				<!-- ----- QUARTER 2 ----- -->
 				<h3>Q2 Progress</h3>
 				<ul>
 					<li>Backend Learning</li>
@@ -47,9 +105,25 @@
 					<li>New Frontend</li>
 					<li>New Backend (?)</li>
 				</ul>
+				<h4 id ='BackendLearning'>Backend Learning</h4>
+				<p>
+					I met with with one of our lead programmers and designers for the site. Sean helped
+					me throughout this entire quarter and taught me during each step of my journey.
+				</p>
+				<h4 id='RepoUpkeep'>Repo Upkeep</h4>
+
+				<h4 id='Prototype2'>Prototype 2</h4>
 				<img src="Images/p2.png" alt="*missing image of prototype 2"><br>
 				<i>Prototype 2</i> <br>
-			<article>
+
+				<h4 id='NewFrontend'>New Frontend</h4>
+
+				<h4 id='NewBackend'>New Backend</h4>
+			</article>
+
+			<div class="navbar_bottom">
+				<a href="#top" class="active">Return to Top</a>
+			</div>
 		</main>
 	</header>
   </body>
