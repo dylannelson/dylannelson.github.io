@@ -52,10 +52,13 @@
 
 				<h4 id="using_pyre">Using Pyrenote</h4>
 				<p>
-					As a user of Pyrenote I came up with a few ideas and improvements I wanted to implements. In the
-					end, my team and I decided to make a User Profile page. Engaging users is key to the Pyrenote
-					workflow, because without users, there is no content to be generated. We set out to incorporate a
-					user page with a few goals in mind: <br>
+					As a user of Pyrenote I came up with a few ideas and improvements I wanted to implement. One of the
+					main issues we faced was needing to ask our team leader, who was the only one who could access the
+					data of our project, for updates. Each time we did this he had to manually go through the data,
+					parse it, and deliver it to us (manually). This is something that can clearly be automated and
+					delivered directly to the user. In the end, my team and I decided to make a User Profile page.
+					Engaging users is key to the Pyrenote workflow, and we need users to be content, because without
+					good users, we don’t have data.. We set out to incorporate a user page with a few goals in mind: <br>
 					<ul>
 						<li>To allow users to track their progress on their own, in real time</li>
 						<li>To allow users to access previously annotated clips, in case there was an error, incomplete
@@ -63,7 +66,7 @@
 						<li>To allow managers to organize and access all this data better as well, without manual 
 							intervention</li>
 					</ul>
-					Through this process we assessed each of these, and have plans and the potential to do much more.
+					Through this process we assessed each of these, and strived for even greater.
 				</p>
 
 				<h4 id="dev_ideas">Developing Ideas</h4> 
@@ -119,8 +122,8 @@
 				</p>
 				
 				<h4 id='Prototype2'>Prototype 2</h4>
-				<img src="Images/p2.png" alt="*missing image of prototype 2"><br>
-				<i>Prototype 2</i> <br>
+				<img class = 'imgAndCaption' src="Images/p2.png" alt="*missing image of prototype 2">
+				<i class = 'imgAndCaption'>Prototype 2</i> 
 				<p>New Insights
 					<ul>
 						<li>A whole new section to distinguish between groups</li>
@@ -158,12 +161,95 @@
 
 				<h4>What Now?</h4>
 				<p>
-					Honestly just trying to get things done. I'm learning a lot while trying to develop the 
+					Honestly just trying to get things out. I'm learning a lot while trying to develop the 
 					backend code, but with that comes a lot of issues. I was overzealous with how much I 
 					I thought I could learn and do in these last few weeks of the quarter, but I'm proud of
 					how far I've come and will continue working and see this project through. If you're actually
 					reading this and made it this far, please let me know what you think. Thank you 
 				</p>
+				<hr>
+				<h1>Technical Work Dump</h4>
+				<p>This chunk is not meant to be report-like and is meant to be useful for someone (potentially my 
+					future self) trying to understand the proccess for setting up some of the code. 
+				</p>
+				<h3>1. Creating New Page</h3>
+				<ol>
+					<li>Add a item to the navbar in <i>audino/frontend/src/containers/navbar.js</i>
+						<ul>
+							<li>Add the new page as list element near the end of the Navbar script</li>
+							<li><img src="Images/navbar.PNG" alt=""></li>
+							<li>NOTE: The directory (the “to = …”) of the file here matters, it must be the same 
+								as the JS file you will create</li>
+						</ul>
+					</li>
+					<li>Create a JS file with the same name in audino/frontend/src/pages. Mine will be titled 
+						<b>“profilePage.js”</b> </li>
+					<li>In <i>audino/frontend/src/pages/index.js</i>, assign a name to the page in a new import line, 
+						and then add that name to the list of exports
+						<ul>
+							<li><img src="Images/indx.PNG" alt=""></li>
+							<li>The first highlighted line was added entirely, and the second line <b>“Profile”</b> 
+								was simply added to the set</li>
+						</ul>
+					</li>
+					<li>Establish a private route to the new JS script in audino/frontend/src/app.js, allowing it to
+						be found by other files
+						<ul>
+							<li><img src="Images/app1.PNG" alt=""></li>
+							<li>Add “Profile” (or the name of the page) to the initial import of the same file</li>
+							<li><img src="Images/app2.PNG" alt=""></li>
+							<li>Add a private route as well. This should be in the render portion, near the end of the script</li>
+						</ul>
+					</li>
+				</ol>
+
+				<h3>2. Creating Dynamic Stats</h3>
+				<p>This is the first example I implemented of dynamic backend code working for the front end.
+					I will explain it in a more general way so some logic can apply to other applications. The code is vast
+					though so I recommend looking at the source code as well if your goal is to actually implement 
+					something like this.
+				</p>
+				<ol>
+					<!-- 1) ____                  -->
+					<li> In <i>audino/routes</i> create a new file
+						<ul>
+							<li>You can name it whatever you want, but for this example it will be <i>user_metrics.py</i> </li>
+							<li></li>
+						</ul>
+					</li>
+
+					<!-- 2) ____                  -->
+					<li>
+						<ul>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+
+					<!-- 3) ____                  -->
+					<li>
+						<ul>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+
+					<!-- 4) ____                  -->
+					<li>
+						<ul>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+
+					<!-- 5) ____                  -->
+					<li>
+						<ul>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+				</ol>
 			</article>
 
 			<div class="navbar_bottom">
