@@ -56,7 +56,7 @@ ul.navbar li a, .CurrentPage{
 	display: block;
 	color: #ffffff;
 	text-decoration: none;
-	text-align:center;
+	text-align:left;
 	
 }
 ul.navbar li:hover {
