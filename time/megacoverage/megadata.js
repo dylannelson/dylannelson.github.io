@@ -1,0 +1,23 @@
+var mega_list = {
+    current : ['Abomasnow',
+        'Absol',
+        'Aerodactyl',
+        'Altaria',
+        'Ampharos',
+        'Beedrill',
+        'Blastoise',
+        'Charizard_x',
+        'Charizard_y',
+        'Gengar',
+        'Gyarados',
+        'Houndoom',
+        'Kangaskhan',
+        'Latias',
+        'Latios',
+        'Lopunny',
+        'Manectric',
+        'Pidgeot',
+        'Slowbro',
+        'Steelix',
+        'Venusaur']
+}

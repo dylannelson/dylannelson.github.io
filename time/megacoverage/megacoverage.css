@@ -1,0 +1,11 @@
+.toggleON {
+    background-color: #bcc8bc;
+    border: none;
+    padding: 0px 0px;
+}
+
+.toggleOFF {
+    background-color: #ffffff;
+    border: none;
+    padding: 0px 0px;
+}

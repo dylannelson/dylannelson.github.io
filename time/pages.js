@@ -1,7 +1,7 @@
 var pages = {
     home:{
         page_name: 'home',
-        link:'../index.html',
+        link:'/time/index.html',
         total_subpages:0,
     },
     github: {
@@ -11,8 +11,15 @@ var pages = {
     },
     randomwiki:{
         page_name: '"Random" Wikipeda',
-        link: 'randomwiki',
-        total_subpages: 3,
+        link: '/time/randomwiki',
+        total_subpages: 0,
         subpage_names: ['main', 'background', 'goals', 'updates']
+    },
+    pokemongo:{
+        page_name: '<b>Pokemon Go</b>',
+        link: '/time/pokemongo',
+        total_subpages: 1,
+        subpage_names: ['Mega Coverage'],
+        subpage_links: ['megacoverage']
     }
 }
