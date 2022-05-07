@@ -21,3 +21,26 @@ var mega_list = {
         'Steelix',
         'Venusaur']
 }
+var mega_data = {
+    'Abomasnow': { 'types': ['Ice', 'Grass'], 'types_index': [14, 11] },
+    'Absol': { 'types': ['Dark'], 'types_index': [16] },
+    'Aerodactyl': { 'types': ['Rock', 'Flying'], 'types_index': [5, 2] },
+    'Altaria': { 'types': ['Dragon', 'Fairy'], 'types_index': [15, 17] },
+    'Ampharos': { 'types': ['Electric', 'Dragon'], 'types_index': [12, 15] },
+    'Beedrill': { 'types': ['Bug', 'Poison'], 'types_index': [6, 3] },
+    'Blastoise': { 'types': ['Water'], 'types_index': [10] },
+    'Charizard_x': { 'types': ['Fire', 'Dragon'], 'types_index': [9, 15] },
+    'Charizard_y': { 'types': ['Fire', 'Flying'], 'types_index': [9, 2] },
+    'Gengar': { 'types': ['Ghost', 'Poison'], 'types_index': [7, 3] },
+    'Gyarados': { 'types': ['Water', 'Dark'], 'types_index': [10, 16] },
+    'Houndoom': { 'types': ['Fire', 'Dark'], 'types_index': [9, 16] },
+    'Kangaskhan': { 'types': ['Normal'], 'types_index': [0] },
+    'Latias': { 'types': ['Dragon', 'Psychic'], 'types_index': [15, 13] },
+    'Latios': { 'types': ['Dragon', 'Psychic'], 'types_index': [15, 13] },
+    'Lopunny': { 'types': ['Normal', 'Fighting'], 'types_index': [0, 1] },
+    'Manectric': { 'types': ['Electric'], 'types_index': [12] },
+    'Pidgeot': { 'types': ['Normal', 'Flying'], 'types_index': [0, 2] },
+    'Slowbro': { 'types': ['Water', 'Psychic'], 'types_index': [10, 13] },
+    'Steelix': { 'types': ['Steel', 'Ground'], 'types_index': [8, 4] },
+    'Venusaur': { 'types': ['Grass', 'Poison'], 'types_index': [11, 3] }
+}
