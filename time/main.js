@@ -12,23 +12,20 @@ window.onload = function () {
         curr_a = document.createElement('a');
         curr_a.innerHTML = pages[curr_elem]['page_name'];
         curr_a.href = pages[curr_elem]['link'];
-        curr_a.classList.add('mainA');
+        curr_a.classList.add('navLink');
         // Combine+Add Elements
         curr_li.appendChild(curr_a);
         nav_list.appendChild(curr_li);
     }
     // make certain links open in a seperate tab
     // currently github only
-    
     curr_elem = document.getElementById("page_github").querySelector("a");
     curr_elem.setAttribute('target', '_blank');
     
-    // set the current page
+    // set the current page (whacky but works ok)
     // Relies on Title element to share the current page's id
-    // whacky but works ok 
     page_name = document.getElementsByTagName('title')[0].id;
     page_id = 'page_' + page_name;
-    console.log(page_id);
     curr_page = document.getElementById(page_id);
     curr_page.querySelector("a").classList.add('CurrentPage');
 
@@ -42,11 +39,11 @@ window.onload = function () {
             curr_subpage = sub_pages[i];
             // Create list element
             curr_li = document.createElement('li');
-            curr_li.id = `page_${String(page_name)}_${String(sub_page_links)}`;
+            curr_li.id = `page_${String(page_name)}_${String(sub_page_links[i])}`;
             // Create link element
             curr_a = document.createElement('a');
             curr_a.innerHTML = `- ${String(curr_subpage)}`;
-            curr_a.href = `/time/${String(sub_page_links)}`
+            curr_a.href = `/time/${String(sub_page_links[i])}`
             // Combine+Add Elements
             curr_li.appendChild(curr_a);
             sublist.appendChild(curr_li);

@@ -1,7 +1,6 @@
 :root {
 	--back-color: #363636;
 	--body-color: #fff;
-	--nav-color: #fff;
 	--highlight-color: #292929;
 }
 body{
@@ -15,36 +14,31 @@ main{
 	background-color: var(--back-color);
 	text-align: center;
 	padding-bottom:40px;
+	margin-top: 2%;
 	
 }
 main article{
 	text-align: left;
-	margin-top: 2%;
 	display: inline-block;
 	background-color:var(--body-color);
 	width: 60%;
 	overflow: hidden;
 	padding: 0px 20px;
-	border-radius: 20px;
+	border-radius: 1px;
 }
+/* Left Navbar Options */
 ul.navbar{
 	list-style-type: none;
 	float: left;
-	padding-left: 5%;
+	margin: 0px;
+	padding: 0px;
 }
 ul.navbar a{
-	/* The Clickable Range 
-		Slight space on sides
-		Tiny space top/bottom
-	 */
-	padding-left: 15px;
-	padding-right: 15px;
-	
-	/* The Non-clickable Range */
-	margin-top: 15px;
-	margin-bottom: 15px;
+	/* the highlightable region of the link */
+	padding: 7px;
+	padding-left: 20px;
 }
-.mainA, .CurrentPage{
+.navLink, .CurrentPage{
 	display: block;
 	color: #ffffff;
 	text-decoration: none;
@@ -53,7 +47,7 @@ ul.navbar a{
 }
 .CurrentPage {
 	background-color: var(--highlight-color);
-
+	
 }
 ul.navbar a:hover{
 	background-color: var(--highlight-color);
