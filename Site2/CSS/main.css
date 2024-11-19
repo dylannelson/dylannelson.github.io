@@ -1,0 +1,113 @@
+
+:root {
+    /* colors:
+    https://www.reddit.com/r/HalfLife/comments/18v66s2/what_is_the_default_hev_suit_color_for_hl1_is_it/#lightbox
+    https://imagecolorpicker.com/ */
+	--primary-color: #4c5844;
+	--secondary-color:  #3e4637;
+	--link-color: #c4b550;
+	--text-color: #cdd3c8;
+}
+body{
+    font-family: "Courier New", monospace;
+    background-color: var(--secondary-color);
+    margin:0px;
+    font-weight: bold; /* Consider removing */
+}
+.console {
+    background-color: var(--primary-color); 
+    color: var(--text-color); 
+    padding:7px; /* Space inside the div */
+    font-size: 14px; 
+    line-height: 1.2; /* Consider removing */
+    width: 80%;
+    margin: 7px auto; /* centers and spaces */
+    margin-top: 0px; /* Allows space for titles */
+    box-shadow: 
+        inset 1px 1px 0 #2c3225,
+        inset -1px -1px 0 #757f6d;
+    overflow: auto; 
+}
+nav ul {
+	list-style-type: none;
+	background-color: var(--primary-color);
+	overflow: hidden;
+	margin: 0px;
+	padding: 0;
+    box-shadow: 
+        inset 1px 1px 0 #2c3225,  /* White shadow on bottom and right */
+        inset -1px -1px 0 #757f6d; /* Black shadow on top and left */
+}
+nav li{
+	float:left;
+	width: 25%;
+}
+nav li a{
+	display: block;
+	color: var(--text-color);
+	text-decoration: none;
+	text-align:center;
+	padding: 10px 0px;
+}
+nav li a:hover {
+	background-color: var(--secondary-color);
+	color: white;
+    box-shadow: 
+        inset 1px 1px 0 #2c3225,  
+        inset -1px 0px 0 #757f6d; 
+}
+.CurrentPage{
+	background-color: var(--secondary-color);
+    box-shadow: 
+        inset 1px 1px 0 #2c3225,  
+        inset -1px -1px 0 #757f6d; 
+        box-shadow: 
+            inset 1px 1px 0 #2c3225,  
+            inset -1px 0px 0 #757f6d; 
+        clip-path: inset(-10px -10pxpx -10px);
+	
+}
+
+.highlight {
+    font-style: bold; /* Makes the text italic */
+    font-size: calc(1em + 1px); /* Increases size by 1px */
+    color: var(--link-color); 
+    text-decoration: none;
+}
+.tab{
+    text-align: left;
+    color: var(--text-color);
+    font-size: 14px; /* Adjust font size to suit the design */
+    width: 82%; /* Adjust width as needed */
+    margin: auto; /* Center the console */
+    padding-left: 0px;
+    padding-bottom: 0px;
+    overflow: auto; /* Ensure typing effect works */
+}
+
+/* link : https://dev.to/afif/a-multi-line-css-only-typewriter-effect-3op3 */
+.type {
+    font-family: monospace;
+    color:#0000;
+    background:
+      linear-gradient(-90deg,var(--text-color) 5px,#0000 0) 10px 0,
+      linear-gradient(var(--text-color) 0 0) 0 0;
+    background-size:calc(var(--n)*1ch) 200%;
+    -webkit-background-clip:padding-box,text;
+    background-clip:padding-box,text;
+    background-repeat:no-repeat;
+    animation: 
+      blinking .7s infinite steps(1),   
+      typing calc(var(--n)*.04s) steps(var(--n)) forwards;
+  }
+  @keyframes typing{
+    from {background-size:0 200%}
+  }
+  @keyframes blinking{
+    50% {background-position:0 -100%,0 0}
+  }
+  
+
+
+
+
