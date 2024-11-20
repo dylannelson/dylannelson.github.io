@@ -7,29 +7,29 @@
 	--secondary-color:  #3e4637;
 	--link-color: #c4b550;
 	--text-color: #cdd3c8;
+    --drop-color: #000;
+    --dark-shadow: #2c3225;
+    --light-shadow: #757f6d; 
 }
 body{
     font-family: "Courier New", monospace;
     background-color: var(--secondary-color);
     margin:0px;
-    font-weight: bold; /* Consider removing */
 }
 .console {
     background-color: var(--primary-color); 
     color: var(--text-color); 
-    padding:0px; /* Space inside the div */
     font-size: 14px; 
     line-height: 1.2; /* Consider removing */
     width: 80%;
     margin: 10px auto; /* centers and spaces */
     margin-top: 0px; /* Allows space for titles */
     box-shadow: 
-        inset 1px 1px 0 #2c3225,
-        inset -1px -1px 0 #757f6d;
+        inset 1px 1px 0 var(--dark-shadow),
+        inset -1px -1px 0 var(--light-shadow);
     overflow: auto; 
-}
-.console p{
-    padding:5px;
+    padding: 0 10px; /* Adds space to inner content */
+    box-sizing: border-box; /* Ensures padding doesn't affect dimensions */
 }
 nav ul {
 	list-style-type: none;
@@ -37,13 +37,16 @@ nav ul {
 	overflow: hidden;
 	margin: 0px;
 	padding: 0;
-    box-shadow: 
-        inset 1px 1px 0 #2c3225,  /* White shadow on bottom and right */
-        inset -1px -1px 0 #757f6d; /* Black shadow on top and left */
+    font-size: clamp(16px, 2vw, 24px);
+    
 }
 nav li{
 	float:left;
 	width: 25%;
+    box-shadow: 
+        inset 1px 1px 0 var(--dark-shadow),
+        inset -1px -1px 0 var(--light-shadow);
+    font-weight: bold; /* Consider removing */
 }
 nav li a{
 	display: block;
@@ -51,31 +54,29 @@ nav li a{
 	text-decoration: none;
 	text-align:center;
 	padding: 10px 0px;
+    text-shadow: 1px 1px 0 var(--drop-color); 
 }
 nav li a:hover {
 	background-color: var(--secondary-color);
 	color: white;
     box-shadow: 
-        inset 1px 1px 0 #2c3225,  
-        inset -1px 0px 0 #757f6d; 
+        inset 1px 1px 0 var(--dark-shadow),
+        inset -1px 1px 0 var(--light-shadow);
 }
 .CurrentPage{
 	background-color: var(--secondary-color);
     box-shadow: 
-        inset 1px 1px 0 #2c3225,  
-        inset -1px -1px 0 #757f6d; 
-        box-shadow: 
-            inset 1px 1px 0 #2c3225,  
-            inset -1px 0px 0 #757f6d; 
-        clip-path: inset(-10px -10pxpx -10px);
+        inset 1px 1px 0 var(--dark-shadow),
+        inset -1px 1px 0 var(--light-shadow);
 	
 }
 
 .highlight {
-    font-style: bold; /* Makes the text italic */
-    font-size: calc(1em + 1px); /* Increases size by 1px */
+    font-style: bold; 
+    font-size: calc(1em + 1px); 
     color: var(--link-color); 
     text-decoration: none;
+    /* text-shadow: 1px 1px 0 #000;  */
 }
 .tab{
     text-align: left;
@@ -85,6 +86,7 @@ nav li a:hover {
     margin: auto; /* Center the console */
     padding-bottom: 0px;
     overflow: auto; /* Ensure typing effect works */
+    text-shadow: 1px 1px 0 var(--drop-color); /* Replace #FF5733 with your chosen hex value */
 }
 
 /* link : https://dev.to/afif/a-multi-line-css-only-typewriter-effect-3op3 */
@@ -109,6 +111,31 @@ nav li a:hover {
     50% {background-position:0 -100%,0 0}
   }
   
+/* For WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 15px; /* Width of the vertical scrollbar */
+    height: 15px; /* Height of the horizontal scrollbar */
+}
+::-webkit-scrollbar-track {
+    background: #5a6a50; /* Background of the scrollbar track */
+
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color); /* Scrollbar color */
+    box-shadow: 
+        inset 1px 1px 0 var(--light-shadow),  
+        inset -1px -1px 0 var(--dark-shadow); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #2c3225; /* Color when hovered */
+}
+
+/* For Firefox (use scrollbar-width and scrollbar-color) */
+body {
+    scrollbar-width: thin; /* Options: auto, thin, none */
+    scrollbar-color: var(--light-shadow) var(--dark-shadow); /* thumb color track color */
+}
 
 
 
