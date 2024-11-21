@@ -37,7 +37,7 @@ nav ul {
 	overflow: hidden;
 	margin: 0px;
 	padding: 0;
-    font-size: clamp(16px, 2vw, 24px);
+    font-size: clamp(6px, 3.5vw, 14px);
     
 }
 nav li{
@@ -73,10 +73,23 @@ nav li a:hover {
 
 .highlight {
     font-style: bold; 
-    font-size: calc(1em + 1px); 
     color: var(--link-color); 
     text-decoration: none;
-    /* text-shadow: 1px 1px 0 #000;  */
+    text-shadow: .5px .5px 0 #000; 
+}
+/* Bar that shows the heigharchy of the site
+ ie Home >>> Experience >> Robtotics
+ applied to a div */
+.path{
+    text-align: left;
+    color: var(--text-color);
+    width: 80%; /* Adjust width as needed */
+    margin: auto; /* Center the console */
+    overflow: auto; /* Ensure typing effect works */
+}
+.path a{
+    color: var(--link-color);
+    text-decoration: underline; /* Add underline */
 }
 .tab{
     text-align: left;
@@ -84,9 +97,45 @@ nav li a:hover {
     font-size: 14px; /* Adjust font size to suit the design */
     width: 80%; /* Adjust width as needed */
     margin: auto; /* Center the console */
-    padding-bottom: 0px;
     overflow: auto; /* Ensure typing effect works */
     text-shadow: 1px 1px 0 var(--drop-color); /* Replace #FF5733 with your chosen hex value */
+}
+
+.button {
+    
+    font-family: "Courier New", monospace;
+    background-color: var(--primary-color); /* Background color */
+    box-shadow: 
+        inset 1px 1px 0 var(--light-shadow),  
+        inset -1px -1px 0 var(--dark-shadow); /* Inner shadows */
+    border: none; /* Remove default border */
+    color: var(--link-color); /* Text color */
+    padding: 5px 20px; /* Adjust padding */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    text-align: center; /* Center text */
+    display: inline-block; /* Keeps it inline */
+    transition: box-shadow 0.2s ease, transform 0.2s ease; /* Add hover effects */
+}
+.console_image{
+    max-width: 100%; /* Makes the image no wider than its container */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Optional: Removes inline spacing below the image */
+}
+/* Hover Effect */
+.button:hover {
+    box-shadow: 
+        inset 2px 2px 0 var(--light-shadow),  
+        inset -2px -2px 0 var(--dark-shadow), 
+        2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle outer shadow */
+    transform: translateY(-1px); /* Slight lift on hover */
+}
+
+/* Active State */
+.button:active {
+    box-shadow: 
+        inset -1px -1px 0 var(--light-shadow),  
+        inset 1px 1px 0 var(--dark-shadow); /* Reverse inset for pressed look */
+    transform: translateY(1px); /* Button pressed look */
 }
 
 /* link : https://dev.to/afif/a-multi-line-css-only-typewriter-effect-3op3 */
