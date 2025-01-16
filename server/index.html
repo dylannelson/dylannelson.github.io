@@ -52,10 +52,10 @@
                 <ul class="custom-list"><li> Allowing others access across the web </li></ul></li></li>
             <!-- <li><a href="#cta4">Other</a></li> -->
         </ul>
-        
+        <br>
         <!-- Introduction -->
-        <h2>Introduction</h2>
-
+        <hr><h2>Introduction</h2>
+        <hr>
         <p> 
             I have quite a bit of computer hardware experience, but I don't
             get to practice it much since industries have pushed towards
@@ -65,10 +65,10 @@
             docker or setting up firewall.
         </p>
 
-    
+        
         <!-- Hardware -->
         <section id="cta1" class="main">
-            <h2>Hardware</h2>
+            <hr><h2>Hardware</h2><hr><br>
             <img class = 'small_image' src="images/setup.PNG" alt="">
             <ul>
                 <li><u><a class="highlight" target=”_blank” href="https://www.amazon.com/dp/B011M8YACM">Sata to USB Cable</a></u>
@@ -119,16 +119,70 @@
               </p>
         </section>
     
-
+        <hr>
         <!-- Operating System -->
         <section id="cta2" class="main">
-            <h2>Operating System - Linux</h2>
+            <h2>Operating System - Linux</h2><hr>
+            <p>For the OS, I chose the Linux <u><a class="highlight" href="https://ubuntu.com/download/server">Ubuntu Server</a></u>
+                since it's widely used and has lots of documentation. It's also free and
+                relatively easy to setup. They also provide a free desktop OS, which
+                helps bring in users and developers</p> 
+            <p>Using a Linux server has a few benefits. Being a server OS, 
+                it's designed to be <span class="highlight">"headless."</span> Headless means that
+                there's no desktop, and it's interacted with through a terminal. 
+                Similar to the original computers. This ultimately 
+                <span class="highlight">saves resources</span> and 
+                <span class="highlight">improves automation</span></p>
 
+            <p><b>OS Install Setup:</b> (simplified)</p>
+            <ol>
+                <li><u>Download and flash Ubuntu Server's ISO to a removable drive</u> ⚡
+                    <ul class="custom-list"><li>I used <u><a class="highlight" href="https://etcher.balena.io/">Balena Etcher</a></u> 
+                        to flash the ISO to a 32GB USB flash drive
+                    </li></ul>
+                </li><br>
+                <li><u>Boot the server from the removable drive</u> 🐛
+                    <ul class="custom-list"><li> Depending on the BIOS/PC, the process of telling a computer to boot from a 
+                        specific drive can vary. It may require pressing F8 before another drive boots,
+                        going into BIOS settings, or nothing at all. 
+                    </li></ul><br>
+                <li><u>Complete the setup prompts</u> ✅
+                    <ul class="custom-list"><li> Linux will ask for some help: connecting to the internet, knowing which
+                        drive to use, and what packages + settings you want. Depending on the version or OS, this
+                        may be easy or complicated
+                    </li></ul>
+                </li>
+            </ol>
+            <p><b>Post-Install Setup:</b> (optional)</p>
+            <ol>
+                <li><u>Activate Firewall</u> 🦺
+                    <ul class="custom-list"><li>In My situation, I'll be port forwarding, 
+                        exposing the server to the internet. I went through a firewall setup
+                        to ensure only certain ports are open.
+                    </li></ul>
+                <li><u>Setup + Test SSH</u> 🖥️📡🖥️
+                    <ul class="custom-list"><li>Many people prefer to connect to the server
+                        on another computer. This means you won't need a second monitor, 
+                        keyboard, etc. Establishing this connection can be done many ways.
+                        I used <u><a class="highlight" href="https://ubuntu.com/server/docs/openssh-server">OpenSHH</a></u> which came default on Ubuntu Server and 
+                        <u><a class="highlight" href="https://mobaxterm.mobatek.net/">Mobaxterm</a></u>
+                        to provide a UI for the SSH connection. I tried <span class = "highlight">VSCode</span> for hours and it was all errors.
+                    </li></ul>
+                <li><u>Move/Store Server Hardware</u> 📦
+                    <ul class="custom-list"><li>If you don't plan to interact with the computer much, 
+                        then consider placing it somewhere safe and secure. Away from liquids, pets, 
+                        and in a spot with good wifi (or wired is best). Airflow and clean air matter
+                        to the health of the hardware.
+                    </li></ul>
+                
+            </ol>
+        
         </section>
     
         <!-- Software -->
         <section id="cta3" class="main">
             <h2>Software</h2>
+            <p>~ Currently in progress ~ Come back later ~</p>
         </section>
 
         <!-- Network -->
@@ -139,7 +193,7 @@
         <!-- Footer -->
         <footer id="footer">
             <h2>The End</h2>
-            <p>Thanks!</p>
+            <p>Thanks! If you want more details, please reach out and ask!</p>
         </footer>
     </div>
     
