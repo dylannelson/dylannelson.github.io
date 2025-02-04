@@ -4,7 +4,7 @@
     <title> Main Menu</title> 
     <link rel="stylesheet" type="text/css" href="/CSS/main.css" />
 	<link rel="icon" href="/favicon.ico"/>
-	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <nav> 
@@ -31,24 +31,54 @@
     <div class = 'tab'>Verisk Projects: <br></div>
     <div class="console">
         <p>This is a glance at some of the projects I worked on, and the skills used.</p>
-        <h3>NOAA Severe Weather Prediction</h3><hr>
+        <hr><h3>NOAA Severe Weather Prediction</h3><hr>
+        <p>A 16 month <span class = "highlight">machine learning</span> project to detect damaging weather events, similar to that of NOAA's SPC (below), but globally</p>
+        <img src="images/SPC.PNG" alt="space3" class="console_image">
+        <h3>Components:</h3>
         <ul class="custom-list">
-            <img src="images/SPC.PNG" alt="space3" class="console_image">
-            <li>A <span class = "highlight">machine learning</span> pipeline to detect damaging weather events</li>
             <li>Python scripts for gathering <span class = "highlight">atmospheric weather data(NOAA)</span> and saving to <span class = "highlight"> AWS s3 buckets</span></li>
-            <li>Inputted into machine learning pipeline for converting 25+ variables into <span class = "highlight">risk probabilities</span></li>
+            <li>Imputation of data that is available globally (NOAA is just USA)</li>
+            <li>Inputting into machine learning pipeline for converting our 25+ variables into <span class = "highlight">risk probabilities</span></li>
             <li>Several iterations of models, loss functions, feature selection</li>
+            <li>Full stack pipeline that could automatically fetch, transform, predict, display, and show
+                metrics and about the weather events.</li>
         </ul>
-        <h3>Global Building Footprints</h3><hr>
+        <h3>Skills:</h3>
+        <ol>
+            <li>Working with AWS (s3 buckets, EC2 instances, etc)</li>
+            <li>Learning how to operate in a new domain (no prior experience in meteorology)</li>
+            <li>Working with a variety of Machine Learning models
+                <ul><li>XGBoost, Gradient Boosted Regressor, and Randomized Search CV</li></ul>
+            </li>
+            <li>Delivering and demonstrating results to a team as the sole person on a project</li>
+            <li>Dealing with data lakes, using compression algorithms, and coding efficiently
+                to meet the strict demands of "real time" output.
+            </li>
+        </ol><br>
+        
+        <hr><h3>Global Building Footprints</h3><hr><br>
         <img src="images/map.PNG" alt="space3" class="console_image">
+        <p>The team was expanding their risk detection globally, and needed maps showing where buildings are 
+            located, along with stats on them. In some regions, this data is not available, and we needed
+            to find ways to make our own.
+        </p>
+        <h3>Components:</h3>
         <ul class="custom-list">
-            <li>Development of high quality <span class = "highlight">map dataset of <i>all buildings</i></span> across the globe</li>
+            <li>Filling in missing data to create a <span class = "highlight">map of <i>all buildings</i></span> across the globe</li>
             <li>Extensively learned about <span class = "highlight">data usage licenses and rights</span>, such as creative commons, fair use, etc.</li>
             <li>Determined there were no commercially usable datasets of this kind (without limitations), so we built our own</li>
             <li>Took multiple approaches, <span class = "highlight">LiDAR</span>, <span class = "highlight">satellite imagery</span> + <span class = "highlight">Machine Learning</span>, accessing and gathering <span class = "highlight">government datasets</span>, etc.</li>
             <li>Used <span class = "highlight">ArcGIS Pro</span> for validation and cleaning</li>
         </ul>
-        <br><br>
+        <h3>Skills:</h3>
+        <ol>
+            <li>Working with several different map data formats </li>
+            <li>Contacting government agencies in different countries to apply for access to their data</li>
+            <li>Following strict data use guidelines and rules</li>
+            <li>Retrieving, validating, transforming, and storing data from various sources, languages, and formats</li>
+            <li>Performing all these tasks within ArcGIS Pro</li>
+        </ol>
+        <br>
     </div>
     
     <div class = 'tab'>Contact: <br></div>

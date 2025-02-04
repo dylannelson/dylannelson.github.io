@@ -33,7 +33,6 @@ body{
     box-sizing: border-box; /* Ensures padding doesn't affect dimensions */
 }
 nav ul {
-    
 	list-style-type: none;
 	background-color: var(--primary-color);
 	overflow: hidden;
