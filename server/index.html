@@ -19,10 +19,10 @@
     <div class = "highlight path"><a href="/experience">Experience</a> >>> Server Hosting</div> <br>
     <div class="console">
         <b><p><span class = "highlight">Dylan Nelson:</span> 
-            <span class="type" style="--n:190">Project I'm currently working on <br><br>
-                > Practicing server hosting <br>
-                &nbsp; > Requires more computer hardware experience <br>
-                &nbsp; > and a bit more os/setup work
+            <span class="type" style="--n:190">I learned how to setup my own home linux server <br><br>
+                > Can be accessed across the web <br>
+                &nbsp; > Efficiently hosted on Ubuntu <br>
+                &nbsp; > and could play games with my friends for free
             
             </span>
         </p></b>
@@ -99,17 +99,17 @@
                   <tr>
                     <th>RAM</th>
                     <td>1 GB</td>
-                    <td>32GB</td>
+                    <td><u>32GB</u></td>
                   </tr>
                   <tr>
                     <th>Storage</th>
                     <td>5GB</td>
-                    <td>2048 GB+</td>
+                    <td><u>2048 GB+</u></td>
                   </tr>
                   <tr>
                     <th>Uptime</th>
                     <td>750 Hours/Month</td>
-                    <td>Unlimited</td>
+                    <td><u>Unlimited</u></td>
                   </tr>
                 </tbody>
               </table>
@@ -174,20 +174,73 @@
                         and in a spot with good wifi (or wired is best). Airflow and clean air matter
                         to the health of the hardware.
                     </li></ul>
-                
             </ol>
         
         </section>
     
         <!-- Software -->
         <section id="cta3" class="main">
-            <h2>Software</h2>
-            <p>~ Currently in progress ~ Come back later ~</p>
+            <hr><h2>Software</h2><hr>
+            <p>My first project was getting a gaming server setup. I wanted to use Minecraft due to it's relatively open source nature</p>
+            <u><h3>Setting up Java Developer Kit</h3></u>
+            <p>Normally, this is a pretty  simple setup. Even using ChatGPT, it suggest running 
+                <ul class="custom-list"><li><i>sudo apt install openjdk-17-jre-headless</i></li></ul><br>
+                This used to work and was the case for years, but in this case, the AI models like GPT and Gemini are outdated: </p>
+                <img class = 'small_image' src="images/jdk.PNG" alt="">
+            <p>But according to the <u><a class="highlight" href = 'https://www.minecraft.net/en-us/article/minecraft-snapshot-24w14a'> and official patch notes</a></u> and <u><a class="highlight" href = 'https://www.minecraft.net/en-us/article/minecraft-snapshot-24w14a'> the wiki</a></u>, 
+                it's been using Java 21 since Apr 2024, so be careful blindly trusting AI. Run this instead:
+                <ul class="custom-list"><li><i>sudo apt install openjdk-21-jre-headless</i></li></ul><br></p>
+            
+            <u><h3>Open Ports in Linux</h3></u>
+            <p>The server needs to know where to allow and direct traffic. This allows people from outside 
+                the network (others online) to connect to the server. The standard minecraft port is <u>25565</u>
+                but any port works. To open this port run:
+                <ul class="custom-list"><li><i>sudo ufw allow 25565</i></li></ul><br></p>
+            
+            <u><h3>Retrieve the Installer</h3></u>
+            <p>The installer will be a .jar file provided <u><a class="highlight" href = 'https://www.minecraft.net/en-us/download/server'>here</a></u>
+                Copy the link to the .jar file like seen below:
+                <img src="images/link.PNG" class = 'small_image' alt=""></p>
+                <p>The reason we want the link, and not the file downloaded, is we can automatically download it with a command on the server. Run:</p>
+                <ul class="custom-list"><li><i>wget https://...</i></li></ul>
+                <p> Replace  the "https://..." with the actual link and it will download it to the current directory From there you can run:</p>
+                <ul class="custom-list"><li><i>java -Xmx4GB -Xms4GB -jar server.jar nogui</i></li></ul>
+                <p>and this will get the server setup going.</p>
         </section>
 
         <!-- Network -->
         <section id="cta4" class="main">
-            <h2>Network</h2>
+            <hr><h2>Network</h2><hr>
+            <p>To allow others to access the server, the router needs to know that it can direct traffic in and out.
+                It needs to be told what traffic to allow (request to port 25565), and where (to the local IP of the server)</p>
+            <u><h3>Port Forwarding</h3></u>
+            <p>To access the router's settings, you need to find the network's "Default Gateway" on the
+                non-server device. This can be done by running the command "ipconfig" in Command Prompt, or  the equivalent in other terminals</p> 
+            <p>The default gateway will look something like "192.168.__.__" and can be copy pasted into the browser to access the UI for the
+                router:</p>
+            <img src="images/port.PNG" class = 'small_image' alt="">
+            <p>This is an example of what it may look like after navigating to the Port Forwarding tab. By filling out this form
+                you can expose the server to the web and allow others to connect. Specifics for port forwarding vary a lot depending on the device.
+            </p>
+            <u><h3>Networking Notes:</h3></u>
+            <ol>
+                <li><u>Protocol Option</u> 
+                    <ul class="custom-list"><li>
+                        The form will request you chose a protocol. There are many options, but TCP is the only
+                        one required by Minecraft. Some say TCP+UDP is the right option, but UDP is not used
+                    </li></ul>
+                <li><u>Reverse Proxy</u>
+                    <ul class="custom-list"><li>
+                        It is very often suggested to setup a reverse proxy to handle disguising your IP. For most
+                        situations where you only share the IP with a few people, don't leave it on 24/7, and don't have
+                        anything sensitive in reach of the server, this may not be necessary,
+                    </li></ul>
+                <li><u>Domain Name</u>
+                    <ul class="custom-list"><li>Along with the reverse proxy, you can use a custom domain name 
+                        to further disguise your public IP. This isn't really hiding your IP, but allowing it to be
+                        reached using a more easy to spell and remember name.
+                    </li></ul>
+            </ol>
         </section>
 
         <!-- Footer -->

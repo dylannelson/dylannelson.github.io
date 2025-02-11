@@ -22,7 +22,7 @@ body{
     color: var(--text-color); 
     font-size: 14px; 
     line-height: 1.2; /* Consider removing */
-    width: 80%;
+    width: 85%;
     margin: 10px auto; /* centers and spaces */
     margin-top: 0px; /* Allows space for titles */
     box-shadow: 
@@ -106,7 +106,7 @@ nav li a:hover {
 .path{
     text-align: left;
     color: var(--text-color);
-    width: 80%; /* Adjust width as needed */
+    width: 85%; /* Adjust width as needed */
     margin: auto; /* Center the console */
     overflow: auto; /* Ensure typing effect works */
 }
@@ -118,7 +118,7 @@ nav li a:hover {
     text-align: left;
     color: var(--text-color);
     font-size: 14px; /* Adjust font size to suit the design */
-    width: 80%; /* Adjust width as needed */
+    width: 85%; /* Adjust width as needed */
     margin: auto; /* Center the console */
     overflow: auto; /* Ensure typing effect works */
     text-shadow: 1px 1px 0 var(--drop-color); /* Replace #FF5733 with your chosen hex value */
