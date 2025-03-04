@@ -16,14 +16,14 @@ body{
     background-color: var(--secondary-color);
     margin:0px;
 }
-/* The main content boxes on each page */
 .console {
     background-color: var(--primary-color); 
     color: var(--text-color); 
     font-size: 14px; 
     line-height: 1.2; /* Consider removing */
     width: 85%;
-    margin: 10px auto; /* centers and spaces */
+    max-width: 800px; /* Prevents it from being too large on big screens */
+    margin: 10px auto; /* Centers and spaces */
     margin-top: 0px; /* Allows space for titles */
     box-shadow: 
         inset 1px 1px 0 var(--dark-shadow),
@@ -32,6 +32,7 @@ body{
     padding: 0 10px; /* Adds space to inner content */
     box-sizing: border-box; /* Ensures padding doesn't affect dimensions */
 }
+
 nav ul {
 	list-style-type: none;
 	background-color: var(--primary-color);
@@ -106,7 +107,8 @@ nav li a:hover {
 .path{
     text-align: left;
     color: var(--text-color);
-    width: 85%; /* Adjust width as needed */
+    width: 85%;
+    max-width: 800px;
     margin: auto; /* Center the console */
     overflow: auto; /* Ensure typing effect works */
 }
@@ -118,7 +120,8 @@ nav li a:hover {
     text-align: left;
     color: var(--text-color);
     font-size: 14px; /* Adjust font size to suit the design */
-    width: 85%; /* Adjust width as needed */
+    width: 85%;
+    max-width: 800px;
     margin: auto; /* Center the console */
     overflow: auto; /* Ensure typing effect works */
     text-shadow: 1px 1px 0 var(--drop-color); /* Replace #FF5733 with your chosen hex value */
